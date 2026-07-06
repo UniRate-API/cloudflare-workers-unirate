@@ -1,0 +1,30 @@
+{
+  "name": "cloudflare-workers-unirate",
+  "version": "0.1.0",
+  "description": "Cloudflare Worker template: serve currency exchange rates via the UniRate API using Hono",
+  "private": true,
+  "cloudflare": {
+    "label": "UniRate Currency Exchange Worker",
+    "bindings": {
+      "UNIRATE_API_KEY": {
+        "description": "Your UniRate API key — get one free at [unirateapi.com](https://unirateapi.com)"
+      }
+    },
+    "categories": ["starter"]
+  },
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250124.0",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.7",
+    "wrangler": "^4.0.0"
+  }
+}

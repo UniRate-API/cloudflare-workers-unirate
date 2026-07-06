@@ -1,0 +1,6 @@
+name = "cloudflare-workers-unirate"
+main = "src/index.ts"
+compatibility_date = "2025-01-01"
+
+# Set your UniRate API key as a secret — it stays server-side, never in code:
+# wrangler secret put UNIRATE_API_KEY
